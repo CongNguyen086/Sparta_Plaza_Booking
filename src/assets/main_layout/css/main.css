@@ -1,0 +1,160 @@
+﻿/*.inactive-btn:hover {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}*/
+.inactive-btn {
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+
+.inactive-btn:hover {
+    color: #fff;
+    background-color: #ec971f;
+    border-color: #d58512;
+}
+
+.hotel-logo {
+    max-width: 80%;
+    position: relative;
+    left: 20px;
+}
+
+.dropdown-item-sidebar {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.dropdown-item-sidebar:hover, .dropdown-item-sidebar:focus {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    background-color: none;
+}
+
+.col-md-2 {
+    max-width: none;
+}
+
+.table thead th {
+    vertical-align: middle;
+}
+
+.roomitem {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.roomitem:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.room-details {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.btn-book-now {
+    border: 1px solid #b0914f;
+    padding: 12px 36px;
+    background: #b0914f;
+    color:#ffffff !important;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.btn-book-now:hover {
+    background: #ffffff;
+    color: #b0914f !important;
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.remove-btn {
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.vk-select-room-overide {
+    border-top: 1px solid #f0f0f0;
+    /*padding-top: 10px;*/
+}
+
+.date-input {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+    background-color: #8c7033;
+    margin-bottom: unset;
+    padding-bottom: 15px;
+}
+.booking-btn {
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+.booking-wrapper {
+    background-color: white;
+    text-align: center;
+    margin: 20px 50px 0 50px;
+}
+
+.title-font {
+    font-family: "Playfair Display", serif !important;
+}
+
+.vk-make-a-reservation-left ul li .payment_box {
+    padding-left: 20px;
+}
+
+.vk-make-a-reservation-left ul li .payment_box p {
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    line-height: 1.86;
+    text-align: left;
+    color: #7b7b7b;
+}
+
+.vk-make-a-reservation-left .place-order input {
+    width: 100%;
+    height: 50px;
+    background-color: #b0914f;
+    border: 1px solid #b0914f;
+    font-family: "Raleway", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 2.77;
+    text-align: center;
+    color: #ffffff;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.vk-make-a-reservation-left .place-order input:hover {
+    background: #fff;
+    color: #b0914f;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+/*.booking-btn a {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.88;
+    text-align: center;
+    color: #ffffff;
+    padding: 16px 65px;
+    text-decoration: none;
+}*/
