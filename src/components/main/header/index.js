@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
+import '../custom.css'
 // Components
 import TopHeaderBar from './TopHeaderBar'
-import ShrinkNavBar from './ShrinkNavBar/index'
+import ShrinkNavBar from './shrinkNavBar/index'
 
 class Header extends Component {
     render() {

@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { Switch, Route, withRouter } from 'react-router-dom'
 // Components
-import Home from './Home'
+import Home from './homepage/Home'
 import ProtectedRoute from '../../route/ProtectedRoute'
-import MyBooking from './MyBooking'
+import MyBooking from './mybooking/MyBooking'
 
 class MainNavigator extends Component {
     render() {
@@ -11,7 +11,7 @@ class MainNavigator extends Component {
         console.log(match.url)
         return (
             <Switch>
-                <Route path={`${match.url}home`} component={Home} />
+                <Route path={`${match.url}`} exact component={Home} />
                 <ProtectedRoute path={`${match.url}mybooking`} component={MyBooking} />
             </Switch>
         )

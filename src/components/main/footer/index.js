@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 // Components
-import MainContent from './MainContent/index'
+import MainContent from './mainContent/index'
 import Copyright from './Copyright'
 
 class Footer extends Component {

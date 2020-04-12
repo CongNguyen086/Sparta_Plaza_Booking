@@ -1,5 +1,5 @@
 import React from 'react'
-import buttonList from '../_mocks/buttonMock'
+import buttonList from '../../../../_mocks/buttonMock'
 
 export const ShareButton = ({ url, className }) => (
     <a href={url} target="_blank">

@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import tripad from './stripad.png'
+import tripad from '../_media/stripad.png'
 
 export default function Signup() {
     return (

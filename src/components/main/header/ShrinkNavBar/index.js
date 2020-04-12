@@ -1,13 +1,7 @@
 import React, { Component } from 'react'
-import logo from './LOGO.png'
+import { Affix } from 'antd'
 // Components
 import MenuContainer from './MenuContainer'
-
-const Logo = () => (
-    <a className="vk-navbar-brand navbar-brand" href="#">
-        <img src={logo} alt="" className="img-responsive" />
-    </a>
-)
 
 class ShrinkNavBar extends Component {
     render() {
@@ -16,12 +10,11 @@ class ShrinkNavBar extends Component {
                 <div className="vk-main-menu animated uni-sticky">
                     <div className="container">
                         <div className="uni-transparent-1-menu">
-                            <div className="vk-navbar-header navbar-header">
-                                <Logo />
-                            </div>
                             {/*./vk-navbar-collapse*/}
                             <div className="row">
-                                <MenuContainer />
+                                <Affix>
+                                    <MenuContainer />
+                                </Affix>
                             </div>
                         </div>
                     </div>

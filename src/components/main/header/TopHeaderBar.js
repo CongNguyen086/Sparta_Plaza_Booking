@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, useHistory } from 'react-router-dom'
+import logo from './_media/LOGO.png'
 // Component
 import LoginStatus from './LoginStatus'
 import auth from '../../auth/auth'
@@ -11,13 +12,22 @@ const Info = () => (
     </div>
 )
 
+const Logo = () => (
+    <div className="vk-navbar-header navbar-header" style={{ marginTop: 5 }}>
+        <a className="vk-navbar-brand navbar-brand" href="#">
+            <img src={logo} alt="" className="img-responsive" />
+        </a>
+    </div>
+)
+
 const TopHeaderBar = () => {
     const history = useHistory()
     return (
-        <div className="vk-header-top hidden-xs hidden-sm">
+        <div className="vk-header-top hidden-xs hidden-sm" style={{ position: "unset" }}>
             <div className="container">
                 <div className="content">
                     <Info />
+                    <Logo />
                     <div className="vk-top-header-right">
                         <ul className="quick-address">
                             <li>

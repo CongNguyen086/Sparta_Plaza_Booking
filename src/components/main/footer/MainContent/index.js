@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
-import logo from './logo-footer.png'
-import { company, services } from '../_mocks/menuMock'
+import logo from '../_media/logo-footer.png'
+import { company, services } from '../../../../_mocks/footerNavigateMock'
 // Components
 import WidgetContainer from './WidgetContainer'
 import WidgetTitle from './WidgetTitle'

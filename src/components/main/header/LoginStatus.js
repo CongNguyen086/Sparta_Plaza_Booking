@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './link.css'
 
 const Welcome = ({ userName }) => (
     <React.Fragment>
