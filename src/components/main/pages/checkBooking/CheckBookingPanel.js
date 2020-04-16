@@ -13,7 +13,7 @@ const adultNumber = Array(10).fill(1).map((val, idx) => {
     let value = val + idx
     return <Option key={value}>{value}</Option >
 })
-const childNumber = Array(10).fill(1).map((val, idx) => {
+const childNumber = [...Array(10).keys()].map((val, idx) => {
     let value = val + idx
     return <Option key={value}>{value}</Option >
 })

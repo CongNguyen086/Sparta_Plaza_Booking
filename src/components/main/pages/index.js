@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
 import { Switch, Route, withRouter } from 'react-router-dom'
 // Components
-import Home from './homepage/Home'
+import Home from './homePage/Home'
 import ProtectedRoute from '../../route/ProtectedRoute'
-import MyBooking from './mybooking/MyBooking'
+import MyBooking from './myBookingPage/MyBooking'
+import RoomPage from './roomPage/RoomPage'
+import BookingPage from './reservationPage/BookingPage'
 
 class MainNavigator extends Component {
     render() {
@@ -12,6 +14,8 @@ class MainNavigator extends Component {
         return (
             <Switch>
                 <Route path={`${match.url}`} exact component={Home} />
+                <Route path={`${match.url}rooms`} exact component={RoomPage} />
+                <Route path={`${match.url}reservation`} exact component={BookingPage} />
                 <ProtectedRoute path={`${match.url}mybooking`} component={MyBooking} />
             </Switch>
         )

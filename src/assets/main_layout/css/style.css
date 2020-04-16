@@ -4165,8 +4165,8 @@ a {
       position: relative;
       margin-bottom: 50px; } }
   .vk-booking-transparent-1 .booking-hotel-all {
-    background: #f0f0f0;
-    margin-top: 85px;
+    background: #DEDEDE;
+    /* margin-top: 75px; */
     padding: 15px; }
     @media screen and (max-width: 991px) {
       .vk-booking-transparent-1 .booking-hotel-all {
@@ -4672,6 +4672,10 @@ a {
 
 /* End home transparent 2 booking hotel*/
 /*Home center logo header*/
+.vk-sparta-center-logo {
+  overflow-x: hidden;  
+}
+
 .vk-sparta-center-logo .sticky-wrapper {
   height: auto !important; }
 
@@ -6552,7 +6556,7 @@ a {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    height: 393px;
+    height: 575px;
     background-size: cover;
     background: url("../images/02_01_about/background.jpg");
     width: 100%;
@@ -6569,7 +6573,7 @@ a {
       transform: translate(-50%, -50%); }
       .vk-about-banner .vk-about-banner-destop .vk-about-banner-caption h2 {
         font-family: "Playfair Display", serif;
-        font-size: 60px;
+        font-size: 80px;
         font-weight: bold;
         text-align: center;
         color: #ffffff; }
@@ -6962,10 +6966,10 @@ a {
 /*Gallery Banner*/
 .vk-gallery-grid-full-banner .vk-about-banner .vk-about-banner-destop .vk-banner-img {
   background-size: cover;
-  background: url("../images/02_03_gallery_grid_full_width/background.jpg") no-repeat !important;
+  background: url("../../media//room_photo/bg_room_panel.jpg") no-repeat !important;
   background-size: cover;
   background-position: center center;
-  height: 393px;
+  height: 575px;
   width: 100%; }
   @media screen and (max-width: 991px) {
     .vk-gallery-grid-full-banner .vk-about-banner .vk-about-banner-destop .vk-banner-img {
@@ -8969,7 +8973,7 @@ a {
     background: #FFFFFF;
     padding: 0 30px; }
     .vk-room-list-content .vk-dark-our-room-item-right .vk-dark-our-room-item-content h3 {
-      margin-top: 40px;
+      margin-top: 20px;
       margin-bottom: 0px; }
       @media screen and (max-width: 1199px) and (min-width: 992px) {
         .vk-room-list-content .vk-dark-our-room-item-right .vk-dark-our-room-item-content h3 {
@@ -9018,10 +9022,10 @@ a {
             font-weight: normal;
             color: #7b7b7b; }
           .vk-room-list-content .vk-dark-our-room-item-right .vk-dark-our-room-item-content ul li p i {
-            margin-right: 10px; }
+            margin-right: 5px; }
     .vk-room-list-content .vk-dark-our-room-item-right .vk-dark-our-room-item-content .vk-dark-our-room-item-book {
-      border-top: 1px solid #f0f0f0;
-      padding: 20px 0; }
+      border-top: 1px solid #e0e0e0;
+      padding-top: 20px; }
       .vk-room-list-content .vk-dark-our-room-item-right .vk-dark-our-room-item-content .vk-dark-our-room-item-book .vk-dark-our-room-item-book-left {
         float: left; }
         .vk-room-list-content .vk-dark-our-room-item-right .vk-dark-our-room-item-content .vk-dark-our-room-item-book .vk-dark-our-room-item-book-left ul {

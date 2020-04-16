@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Select } from 'antd'
-import { formalTitleFont } from '../../../constants/font'
+import { formalTitleFont } from '../../../../constants/font'
 
 const selectInputStyle = {
     width: '100%',
