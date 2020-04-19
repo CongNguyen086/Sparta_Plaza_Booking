@@ -10,7 +10,7 @@ export default function BookingPanel() {
                         <h2>Reservation</h2>
                         <h3>
                             <a href="#">Reservation</a>
-                            <span><i className="fa fa-angle-right" aria-hidden="true" /></span>
+                            <span><i className="fas fa-angle-right" aria-hidden="true" /></span>
                             <a href="#">Select room</a>
                         </h3>
                     </div>

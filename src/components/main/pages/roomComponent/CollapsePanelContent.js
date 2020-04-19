@@ -45,11 +45,11 @@ export default function CollapsePanelContent({ roomItem: { description, promotio
             </div>
             <MainBenefitContainer>
                 <BreakfastWrap>
-                    <Icon className="fa fa-coffee" aria-hidden="true" />
+                    <Icon className="fas fa-coffee" aria-hidden="true" />
                     <MainBenefit>Breakfast included</MainBenefit>
                 </BreakfastWrap>
                 <PromotionWrap>
-                    <Icon className="fa fa-angle-double-up" aria-hidden="true" />
+                    <Icon className="fas fa-angle-double-up" aria-hidden="true" />
                     <MainBenefit>{promotion}</MainBenefit>
                 </PromotionWrap>
             </MainBenefitContainer>

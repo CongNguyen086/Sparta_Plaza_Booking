@@ -576,7 +576,7 @@ jQuery(document).ready(function ($) {
 
     //==============back to top===========
 
-    $('body').append('<div id="toTop"><div class="btn btn-totop"><i class="fa fa-chevron-up" aria-hidden="true"></i></div></div>');
+    $('body').append('<div id="toTop"><div class="btn btn-totop"><i class="fas fa-chevron-up" aria-hidden="true"></i></div></div>');
     $(window).on('scroll', function () {
         if ($(this).scrollTop() != 0) {
             $('#toTop').fadeIn();

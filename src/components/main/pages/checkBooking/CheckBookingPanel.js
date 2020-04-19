@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { DatePicker, Col, Row, Select, Button } from 'antd'
 import moment from 'moment'
+import { disabledDateBeforeToday } from '../../../../utils'
 // Components
 import BookingInputCard from './BookingInputCard'
 import CustomSelect from './CustomSelect'
@@ -30,7 +31,8 @@ class CheckBookingPanel extends Component {
                                     bordered={false}
                                     placeholder={['Check-in', 'Check-out']}
                                     format={dateFormat}
-                                    defaultPickerValue={[moment(), moment().add(1, 'days')]}
+                                    defaultValue={[moment(), moment().add(1, 'days')]}
+                                    disabledDate={disabledDateBeforeToday}
                                     style={{ fontSize: '20px' }}
                                 />
                             </div>

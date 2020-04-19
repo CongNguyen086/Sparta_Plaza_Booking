@@ -16,7 +16,7 @@ const ListTitle = () => {
 }
 
 class RoomPage extends Component {
-    viewDetails(id, e) {
+    viewDetails(id) {
         console.log(id)
     }
 
@@ -33,7 +33,7 @@ class RoomPage extends Component {
                             button={
                                 <DefaultButton
                                     value='DETAILS'
-                                    handleClick={e => this.viewDetails(item.roomId, e)}
+                                    handleClick={() => this.viewDetails(item.roomId)}
                                 />
                             }
                         />

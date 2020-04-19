@@ -1,6 +1,7 @@
 import React from 'react'
 import { Card } from 'antd'
 import styled from 'styled-components'
+import { displayOccupancy } from '../../../../utils'
 
 const StyleGrid = styled(Card.Grid)`
     width: 33%;
@@ -16,38 +17,36 @@ const Icon = styled.i`
 `;
 
 export default function CollapseExtraBenefit({ roomItem: { adultNumber, childNumber, view, bed } }) {
-    let adult = adultNumber > 1 ? `${adultNumber} adults` : `${adultNumber} adult`
-    let child = childNumber > 1 ? `${childNumber} children` : `${childNumber} child`
-    let maxOccupancy = adult + ', ' + child
+    let maxOccupancy = displayOccupancy(adultNumber, childNumber)
     return (
         <div>
             <StyleGrid hoverable={false}>
                 <ExtraBenefitWrap>
-                    <Icon className="fa fa-users" aria-hidden="true" />
+                    <Icon className="fas fa-users" aria-hidden="true" />
                     <span>{maxOccupancy}</span>
                 </ExtraBenefitWrap>
                 <ExtraBenefitWrap>
-                    <Icon className="fa fa-binoculars" aria-hidden="true" />
+                    <Icon className="fas fa-binoculars" aria-hidden="true" />
                     <span>{view}</span>
                 </ExtraBenefitWrap>
             </StyleGrid>
             <StyleGrid hoverable={false}>
                 <ExtraBenefitWrap>
-                    <Icon className="fa fa-bed" aria-hidden="true" />
+                    <Icon className="fas fa-bed" aria-hidden="true" />
                     <span>{bed}</span>
                 </ExtraBenefitWrap>
                 <ExtraBenefitWrap>
-                    <Icon className="fa fa-wifi" aria-hidden="true" />
+                    <Icon className="fas fa-wifi" aria-hidden="true" />
                     <span>Wifi</span>
                 </ExtraBenefitWrap>
             </StyleGrid>
             <StyleGrid hoverable={false}>
                 <ExtraBenefitWrap>
-                    <Icon className="fa fa-television" aria-hidden="true" />
+                    <Icon className="fas fa-television" aria-hidden="true" />
                     <span>Television</span>
                 </ExtraBenefitWrap>
                 <ExtraBenefitWrap>
-                    <Icon className="fa fa-recycle" aria-hidden="true" />
+                    <Icon className="fas fa-recycle" aria-hidden="true" />
                     <span>Air conditioning</span>
                 </ExtraBenefitWrap>
             </StyleGrid>

@@ -81,7 +81,7 @@
 
 .remove-btn {
     color: #ffffff;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .vk-select-room-overide {
@@ -110,6 +110,7 @@
 
 .title-font {
     font-family: "Playfair Display", serif !important;
+    padding-bottom: 0 !important;
 }
 
 .vk-make-a-reservation-left ul li .payment_box {

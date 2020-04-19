@@ -15,7 +15,6 @@ class CustomSelect extends Component {
         return (
             <Select
                 defaultValue={1}
-                defaultActiveFirstOption
                 bordered={false}
                 style={selectInputStyle}
                 dropdownStyle={{ fontFamily: formalTitleFont, fontWeight: "bold" }}

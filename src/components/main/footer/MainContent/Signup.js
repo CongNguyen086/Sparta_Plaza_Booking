@@ -7,7 +7,7 @@ export default function Signup() {
             <div className="form-group">
                 <div className="input-group">
                     <input type="email" className="form-control" placeholder="Your Email..." />
-                    <span className="input-group-addon success"><i className="fa fa-paper-plane" aria-hidden="true" /></span>
+                    <span className="input-group-addon success"><i className="fas fa-paper-plane" aria-hidden="true" /></span>
                 </div>
             </div>
             <div className="vk-widget-trip">

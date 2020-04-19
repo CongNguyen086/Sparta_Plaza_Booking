@@ -34,7 +34,7 @@ export default function MainContent() {
                                     {company.map(el => (
                                         <li key={el.text}>
                                             <a href={el.url}>
-                                                <i className="fa fa-angle-right" aria-hidden="true" />
+                                                <i className="fas fa-angle-right" aria-hidden="true" />
                                                 {el.text}
                                             </a>
                                         </li>
@@ -52,7 +52,7 @@ export default function MainContent() {
                                     {services.map(el => (
                                         <li key={el.text}>
                                             <a href={el.url}>
-                                                <i className="fa fa-angle-right" aria-hidden="true" />
+                                                <i className="fas fa-angle-right" aria-hidden="true" />
                                                 {el.text}
                                             </a>
                                         </li>

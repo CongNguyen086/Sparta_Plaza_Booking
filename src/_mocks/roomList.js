@@ -1,8 +1,3 @@
-// import room_1 from '../../../../assets/media/room_photo/lg_ABC_room_1.jpg'
-// import room_2 from '../../../../assets/media/room_photo/lg_DB_room_1.jpg'
-// import room_3 from '../../../../assets/media/room_photo/lg_DT_room_1.jpg'
-// import room_4 from '../../../../assets/media/room_photo/lg_STD_room_1.jpg'
-// import room_5 from '../../../../assets/media/room_photo/lg_ST_room_1.jpg'
 export default [
     {
         roomId: 'SUP_T',

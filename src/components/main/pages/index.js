@@ -15,7 +15,7 @@ class MainNavigator extends Component {
             <Switch>
                 <Route path={`${match.url}`} exact component={Home} />
                 <Route path={`${match.url}rooms`} exact component={RoomPage} />
-                <Route path={`${match.url}reservation`} exact component={BookingPage} />
+                <Route path={`${match.url}reservation`} component={BookingPage} />
                 <ProtectedRoute path={`${match.url}mybooking`} component={MyBooking} />
             </Switch>
         )

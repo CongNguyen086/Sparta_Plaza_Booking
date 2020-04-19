@@ -9478,7 +9478,7 @@ a {
     color: #f9f9f9;
     border-bottom: 1px solid #fff; }
   .vk-room-details-content-right input {
-    height: 50px;
+    height: 40px;
     border-radius: 0px;
     font-family: "Raleway", sans-serif;
     font-size: 14px;
@@ -10074,7 +10074,8 @@ a {
       color: #ffffff; }
   .vk-make-a-reservation-content .vk-make-a-reservation-info .vk-make-a-reservation-left {
     background: #fff;
-    padding: 40px 30px; }
+    padding: 40px 30px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1); }
     .vk-make-a-reservation-content .vk-make-a-reservation-info .vk-make-a-reservation-left h3 {
       font-family: "Raleway", sans-serif;
       font-size: 30px;

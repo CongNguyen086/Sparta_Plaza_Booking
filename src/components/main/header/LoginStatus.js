@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Welcome = ({ userName }) => (
     <React.Fragment>
         <input type="hidden" name="selection" />
-        <i className="fa fa-angle-down" aria-hidden="true" />
+        <i className="fas fa-angle-down" aria-hidden="true" />
         <div className="default text" style={{ marginRight: '5px' }}>
             Welcome, {userName}
         </div>

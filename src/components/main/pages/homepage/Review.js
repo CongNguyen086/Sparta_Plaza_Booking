@@ -17,11 +17,11 @@ export default function Review() {
                                 <div className="item">
                                     <div className="vk-sparta-star">
                                         <p>
-                                            <span><i className="fa fa-star" aria-hidden="true" /></span>
-                                            <span><i className="fa fa-star" aria-hidden="true" /></span>
-                                            <span><i className="fa fa-star" aria-hidden="true" /></span>
-                                            <span><i className="fa fa-star" aria-hidden="true" /></span>
-                                            <span><i className="fa fa-star-o" aria-hidden="true" /></span>
+                                            <span><i className="fas fa-star" aria-hidden="true" /></span>
+                                            <span><i className="fas fa-star" aria-hidden="true" /></span>
+                                            <span><i className="fas fa-star" aria-hidden="true" /></span>
+                                            <span><i className="fas fa-star" aria-hidden="true" /></span>
+                                            <span><i className="fas fa-star-o" aria-hidden="true" /></span>
                                         </p>
                                     </div>
                                     <div className="vk-sparta-testimonial-text">
@@ -41,11 +41,11 @@ export default function Review() {
                                 <div className="item">
                                     <div className="vk-sparta-star">
                                         <p>
-                                            <span><i className="fa fa-star" aria-hidden="true" /></span>
-                                            <span><i className="fa fa-star" aria-hidden="true" /></span>
-                                            <span><i className="fa fa-star" aria-hidden="true" /></span>
-                                            <span><i className="fa fa-star" aria-hidden="true" /></span>
-                                            <span><i className="fa fa-star-o" aria-hidden="true" /></span>
+                                            <span><i className="fas fa-star" aria-hidden="true" /></span>
+                                            <span><i className="fas fa-star" aria-hidden="true" /></span>
+                                            <span><i className="fas fa-star" aria-hidden="true" /></span>
+                                            <span><i className="fas fa-star" aria-hidden="true" /></span>
+                                            <span><i className="fas fa-star-o" aria-hidden="true" /></span>
                                         </p>
                                     </div>
                                     <div className="vk-sparta-testimonial-text">
@@ -65,11 +65,11 @@ export default function Review() {
                                 <div className="item">
                                     <div className="vk-sparta-star">
                                         <p>
-                                            <span><i className="fa fa-star" aria-hidden="true" /></span>
-                                            <span><i className="fa fa-star" aria-hidden="true" /></span>
-                                            <span><i className="fa fa-star" aria-hidden="true" /></span>
-                                            <span><i className="fa fa-star" aria-hidden="true" /></span>
-                                            <span><i className="fa fa-star-o" aria-hidden="true" /></span>
+                                            <span><i className="fas fa-star" aria-hidden="true" /></span>
+                                            <span><i className="fas fa-star" aria-hidden="true" /></span>
+                                            <span><i className="fas fa-star" aria-hidden="true" /></span>
+                                            <span><i className="fas fa-star" aria-hidden="true" /></span>
+                                            <span><i className="fas fa-star-o" aria-hidden="true" /></span>
                                         </p>
                                     </div>
                                     <div className="vk-sparta-testimonial-text">

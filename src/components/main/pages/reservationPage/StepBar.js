@@ -4,7 +4,7 @@ const stepContent = ['1. Select Room', '2. Make A Reservation', '3. Confirmation
 
 const Step = ({ isActive, isFinish, title }) => {
     let className = isActive ? 'active' : ''
-    let icon = isFinish ? "fa fa-check" : 'fa fa-angle-right'
+    let icon = isFinish ? "fas fa-check" : 'fas fa-angle-right'
     return (
         <li className={className}>
             <a href="">{title}</a>

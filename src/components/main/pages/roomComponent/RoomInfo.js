@@ -1,11 +1,10 @@
 import React from 'react'
 import { Row, Col } from 'antd'
+import { displayOccupancy } from '../../../../utils'
 
 export default function RoomInfo({ roomItem: { type, adultNumber, childNumber, view, bed, promotion, price },
                             extraTitle, button, isGridInfo }) {
-    let adult = adultNumber > 1 ? `${adultNumber} Adults` : `${adultNumber} Adult`
-    let child = childNumber > 1 ? `${childNumber} Children` : `${childNumber} Child`
-    let maxOccupancy = adult + ', ' + child
+    let maxOccupancy = displayOccupancy(adultNumber, childNumber)
     let mainInfo = view + ', ' + bed
     let ulClassName = isGridInfo ? 'room-info-custom-grid' : 'room-info-custom'
     return (
@@ -23,26 +22,26 @@ export default function RoomInfo({ roomItem: { type, adultNumber, childNumber, v
                 <ul className={ulClassName}>
                     <li>
                         <p>
-                            <i className="fa fa-users" aria-hidden="true" />
+                            <i className="fas fa-users" aria-hidden="true" />
                             <span>{maxOccupancy}</span>
                         </p>
                     </li>
                     <li>
                         <p>
-                            <i className="fa fa-info-circle" aria-hidden="true" />
+                            <i className="fas fa-info-circle" aria-hidden="true" />
                             <span>{mainInfo}</span>
                         </p>
                     </li>
                     <li>
                         <p>
-                            <i className="fa fa-coffee" aria-hidden="true" />
+                            <i className="fas fa-coffee" aria-hidden="true" />
                             <span>Breakfast Included</span>
                         </p>
                     </li>
                     <li>
                         <p>
                             {/* if (promotion != null) */}
-                            <i className="fa fa-angle-double-up" aria-hidden="true" style={{ marginLeft: '2px' }} />
+                            <i className="fas fa-angle-double-up" aria-hidden="true" style={{ marginLeft: '2px' }} />
                             <label style={{ color: '#b0914f' }}>
                                 {promotion}
                             </label>
