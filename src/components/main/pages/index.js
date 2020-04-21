@@ -13,10 +13,10 @@ class MainNavigator extends Component {
         console.log(match.url)
         return (
             <Switch>
-                <Route path={`${match.url}`} exact component={Home} />
-                <Route path={`${match.url}rooms`} exact component={RoomPage} />
-                <Route path={`${match.url}reservation`} component={BookingPage} />
-                <ProtectedRoute path={`${match.url}mybooking`} component={MyBooking} />
+                <Route path={`${match.url}`} exact render={() => <Home />} />
+                <Route path={`${match.url}rooms`} exact render={() => <RoomPage />} />
+                <Route path={`${match.url}reservation`} component={() => <BookingPage />} />
+                <ProtectedRoute path={`${match.url}mybooking`} component={() => <MyBooking />} />
             </Switch>
         )
     }
