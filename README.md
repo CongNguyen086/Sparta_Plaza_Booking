@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).<br />
 Server git link: https://github.com/CongNguyen086/Sparta_Plaza_Server
 
 ## Available Scripts
