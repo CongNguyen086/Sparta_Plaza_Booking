@@ -12,7 +12,7 @@ export default function SlidePanel() {
     return (
         <Carousel autoplay autoplaySpeed={5000} speed={1500} dots={false}>
             {data.map(item => (
-                <SlidePhoto src={item} />
+                <SlidePhoto key={item} src={item} />
             ))}
         </Carousel>
     )

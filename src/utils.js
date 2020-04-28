@@ -1,6 +1,6 @@
 import moment from 'moment'
 
-export const toAbsoluteUrl = pathname => process.env.PUBLIC_URL + pathname
+// export const toAbsoluteUrl = pathname => process.env.PUBLIC_URL + pathname
 
 export const disabledDateBeforeToday = (current) => {
     return current < moment().subtract(1, 'days')

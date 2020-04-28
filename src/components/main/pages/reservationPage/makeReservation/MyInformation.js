@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Form, Input, Divider, Radio } from 'antd'
 import { CountryDropdown, RegionDropdown } from 'react-country-region-selector'
 import styled from 'styled-components'
 // Components
 import DefaultButton from '../../DefaultButton'
+import PaypalButton from './PaypalButton'
 
 const FormItem = styled(Form.Item)`margin-bottom: 15px;`
 
@@ -13,8 +14,15 @@ export default function MyInformation(props) {
         handleInputChange,
         handleCountryChange,
         handleRegionChange,
-        handleConfirm
+        handleConfirm,
+        ...paypalProps
     } = props
+    const [paymentMethod, setMethod] = useState('paypal')
+    useEffect(() => { console.log(paymentMethod) })
+
+    const handlePaymentChange = e => {
+        setMethod(e.target.value)
+    }
 
     return (
         <div className="vk-make-a-reservation-left">
@@ -84,32 +92,32 @@ export default function MyInformation(props) {
                             />
                         </FormItem>
                     </div>
-
+                    {/* Payment */}
                     <Divider orientation='left'>
                         <h3 className="title-font">Payment Method</h3>
                     </Divider>
-                    <FormItem>
-                        <Radio defaultChecked={true} className='paypal-radio-wrapper'>
-                            <img src={require('../../_media/payment/paypal.png')}
-                                alt="PayPal acceptance mark"
-                                className="img-responsive" style={{ display: 'inline', maxWidth: '20%' }} />
-                        </Radio>
-                    </FormItem>
-                    <FormItem>
-                        <Radio defaultChecked={false} className='mastercard-radio-wrapper'>
-                            <img src={require('../../_media/payment/master_card.png')}
-                                alt="Master card acceptance mark"
-                                className="img-responsive" style={{ display: 'inline', maxWidth: '20%' }} />
-                        </Radio>
-                    </FormItem>
+
                     <FormItem style={{ textAlign: 'center' }}>
-                        <DefaultButton
-                            value='CONFIRM RESERVATION'
-                            handleClick={handleConfirm}
-                        />
+                        <PaypalButton {...paypalProps} />
                     </FormItem>
                 </Form>
             </div>
         </div>
     )
 }
+
+{/* <FormItem>
+    <Radio.Group onChange={handlePaymentChange} value={paymentMethod}>
+        <Radio value='paypal' className='paypal-radio-wrapper'>
+            <img src={require('../../_media/payment/paypal.png')}
+                alt="PayPal acceptance mark"
+                className="img-responsive" style={{ display: 'inline', maxWidth: '20%' }} />
+        </Radio>
+
+        <Radio value='card' className='mastercard-radio-wrapper'>
+            <img src={require('../../_media/payment/card_mark.png')}
+                alt="Master card acceptance mark"
+                className="img-responsive" style={{ display: 'inline', maxWidth: '45%' }} />
+        </Radio>
+    </Radio.Group>
+</FormItem> */}

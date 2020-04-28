@@ -176,12 +176,13 @@
 /* Radio */
 .paypal-radio-wrapper, .mastercard-radio-wrapper { 
     display: block; 
+    margin-bottom: 30px;
 }
 .paypal-radio-wrapper .ant-radio {
-    padding-bottom: 15px;
+    padding-bottom: 12px;
 }
 .mastercard-radio-wrapper .ant-radio {
-    padding-bottom: 40px;
+    padding-bottom: 18px;
 }
 /* End form */
 

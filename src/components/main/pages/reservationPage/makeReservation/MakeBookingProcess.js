@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 // Components
 import MyInformation from './MyInformation'
 import MyBooking from './MyBooking'
+import SuccessBox from '../SuccessBox'
 
 export default class MakeBookingProcess extends Component {
     constructor(props) {
@@ -15,7 +16,12 @@ export default class MakeBookingProcess extends Component {
                 address: '',
                 country: '',
                 region: '',
-            }
+            },
+            product: {
+                description: 'This is booking description',
+                price: 50,
+            },
+            paymentStatus: ''
         }
     }
 
@@ -41,13 +47,13 @@ export default class MakeBookingProcess extends Component {
         this.setStateInput('region', val)
     }
 
-    onClickBookingPayment = () => {
-        console.log(this.state.user)
-        console.log('Payment via PayPal')
+    onSuccess = () => {
+        this.setState({ paymentStatus: 'success' })
     }
 
     render() {
-        const { user } = this.state
+        const { user, product, paymentStatus } = this.state
+        if (paymentStatus) return <SuccessBox />
         return (
             <div className="row">
                 <div className="vk-make-a-reservation-info">
@@ -55,9 +61,11 @@ export default class MakeBookingProcess extends Component {
                         <MyInformation
                             user={user}
                             handleInputChange={this.handleChange}
-                            handleConfirm={this.onClickBookingPayment}
+                            // handleConfirm={this.onClickBookingPayment}
                             handleCountryChange={this.handleCountryChange}
                             handleRegionChange={this.handleRegionChange}
+                            product={product}
+                            onSuccess={this.onSuccess}
                         />
                     </div>
 
