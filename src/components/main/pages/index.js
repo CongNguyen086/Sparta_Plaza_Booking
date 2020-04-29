@@ -5,7 +5,7 @@ import Home from './homePage/Home'
 import ProtectedRoute from '../../route/ProtectedRoute'
 import MyBooking from './myBookingPage/MyBooking'
 import RoomPage from './roomPage/RoomPage'
-import BookingPage from './reservationPage/BookingPage'
+import BookingPage from './reservationPage'
 
 class MainNavigator extends Component {
     render() {
