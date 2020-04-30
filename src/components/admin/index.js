@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Switch, Route, withRouter } from 'react-router-dom'
 // Components
 import Login from '../auth/adminLogin/AdminLogin'
-import AdminPages from './layout/AdminPages'
+import AdminPages from './AdminPages'
 
 class AdminRoute extends Component {
     render() {
@@ -10,7 +10,7 @@ class AdminRoute extends Component {
         return (
             <Switch>
                 <Route path={`${match.url}/login`} exact component={Login} />
-                <Route path={`${match.url}/admin`} component={AdminPages} />
+                <Route path={`${match.url}`} component={AdminPages} />
             </Switch>
         )
     }
