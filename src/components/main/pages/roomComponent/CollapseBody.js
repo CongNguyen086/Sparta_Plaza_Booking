@@ -8,7 +8,7 @@ import CollapseExtraBenefit from './CollapseExtraBenefit'
 export default function CollapsePanel({ roomItem, ...other }) {
     return (
         <Card
-            title={<a className='collapse-title'>{roomItem.type}</a>}
+            title={<a className='collapse-title'>{roomItem.room_type}</a>}
             extra={<DefaultButton value='ADD ROOM' {...other} />}
             bordered={false}
             headStyle={{ padding: 0 }}

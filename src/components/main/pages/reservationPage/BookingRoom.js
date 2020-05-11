@@ -22,11 +22,11 @@ const SubTotal = styled.label`
     line-height: 1 !important;
 `;
 
-export default function BookingRoom({ roomItem: { type, adultNumber, price, promotionValue },
+export default function BookingRoom({ roomItem: { room_type, adultNumber, rate, promotionValue },
     night, childNumber, handleClick }) {
     let numberOfGuest = displayOccupancy(adultNumber, childNumber)
     let numberOfNight = displayNight(night)
-    let subtotal = price*(1 - promotionValue)
+    let subtotal = rate*(1 - promotionValue)
     return (
         <div id="bookingItem">
             <div className="vk-select-room1 vk-select-room-overide" style={{ margin: '10px 30px 0 30px', padding: '10px 0 10px 0' }}>
@@ -34,7 +34,7 @@ export default function BookingRoom({ roomItem: { type, adultNumber, price, prom
                     <div className="col-md-10">
                         {/* Room Name */}
                         <h2>
-                            <span>{type}</span>
+                            <span>{room_type}</span>
                         </h2>
                     </div>
                     <div className="col-md-2" style={{ paddingTop: '5px', textAlign: 'right' }}>

@@ -24,7 +24,7 @@ const Title = styled.span`
     font-weight: bold;
 ` 
 
-export default function AdminHeader({ collapsed, onClick, pageName }) {
+export default function AdminHeader({ collapsed, onClick }) {
     return (
         <Affix>
             <Header className="site-layout-background">
@@ -68,9 +68,9 @@ export default function AdminHeader({ collapsed, onClick, pageName }) {
                     </Col>
                 </Row>
 
-                <Row style={{ padding: '0 30px' }}>
+                {/* <Row style={{ padding: '0 30px' }}>
                     <Title>{pageName}</Title>
-                </Row>
+                </Row> */}
             </Header>
         </Affix>
     )

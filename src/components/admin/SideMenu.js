@@ -12,11 +12,12 @@ import {
     UserSwitchOutlined,
 
 } from '@ant-design/icons';
+import { Link, withRouter } from 'react-router-dom';
 
 const { Sider } = Layout
 const { SubMenu, Item, ItemGroup } = Menu
 
-export default function SideMenu({ collapsed, role }) {
+function SideMenu({ collapsed, role, location }) {
     return (
         <Sider
             trigger={null}
@@ -29,48 +30,53 @@ export default function SideMenu({ collapsed, role }) {
                     <img src={require('./_assets/image/LOGO.png')} className="hotel-logo" />
                 </a>
                 <Divider className='side-menu-divider' />
-                <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
+                <Menu
+                    theme="dark"
+                    mode="inline"
+                    defaultSelectedKeys={['/admin']}
+                    selectedKeys={[location.pathname]}
+                >
                     {role == 'Admin'
-                        ? (<Item key="1">
+                        ? (<Item key='/admin'>
                             <DashboardOutlined />
-                            <span>Dashboard</span>
+                            <Link to='/admin'>Dashboard</Link>
                         </Item>)
-                        : (<Item key="1">
+                        : (<Item key='/admin/arrange'>
                             <ScheduleOutlined />
-                            <span>Arrange Booking</span>
+                            <Link to='/admin/arrange'>Arrange Booking</Link>
                         </Item>)
                     }
                     <ItemGroup key='management' title='MANAGEMENT'>
-                        <Item key="2">
+                        <Item key='/admin/roomcatalog'>
                             <HomeOutlined />
-                            <span>Room Catalog</span>
+                            <Link to='/admin/roomcatalog'>Room Catalog</Link>
                         </Item>
-                        <Item key="3">
+                        <Item key='/admin/room'>
                             <PictureOutlined />
-                            <span>Room</span>
+                            <Link to='/admin/room'>Room</Link>
                         </Item>
-                        <Item key="4">
+                        <Item key='/admin/promotion'>
                             <NotificationOutlined />
-                            <span>Promotion</span>
+                            <Link to='/admin/promotion'>Promotion</Link>
                         </Item>
-                        <Item key="5">
+                        <Item key='/admin/booking'>
                             <CarryOutOutlined />
-                            <span>Booking</span>
+                            <Link to='/admin/booking'>Booking</Link>
                         </Item>
-                        <Item key="6">
+                        <Item key='/admin/guest'>
                             <UserOutlined />
-                            <span>Guest</span>
+                            <Link to='/admin/guest'>Guest</Link>
                         </Item>
                     </ItemGroup>
                     {role == 'Admin'
                         ? (<ItemGroup key='hr' title='HUMAN RESOURCES'>
-                            <Item key="7">
+                            <Item key='/admin/staff'>
                                 <TeamOutlined />
-                                <span>Staff</span>
+                                <Link to='/admin/staff'>Staff</Link>
                             </Item>
-                            <Item key="8">
+                            <Item key='/admin/receptionist'>
                                 <UserSwitchOutlined />
-                                <span>Receptionist</span>
+                                <Link to='/admin/receptionist'>Receptionist</Link>
                             </Item>
                         </ItemGroup>)
                         : null
@@ -82,3 +88,5 @@ export default function SideMenu({ collapsed, role }) {
 }
 
 SideMenu.defaultProps = { role: 'Admin' }
+
+export default withRouter(SideMenu)

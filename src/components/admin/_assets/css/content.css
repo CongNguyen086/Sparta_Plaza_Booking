@@ -1,0 +1,80 @@
+.content-container {
+    min-height: 1000px;
+    margin: 30px;
+    box-shadow: 0px 5px 6px -6px #ccc;
+}
+/* Content */
+.site-page-header {
+    border-bottom: 1px solid #eff0f6;
+}
+.page-header-text {
+    font-size: larger;
+    color: #b0914f;
+}
+.searchBar {
+    margin-bottom: 10px;
+    text-align: right;
+}
+/* Button */
+.default-button, .default-button:active, .default-button:focus {
+    height: auto;
+    margin-top: -5px;
+    color: #fff;
+    background-color: #b0914f;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 0;
+    border: 1px solid #b0914f;
+}
+.default-button:hover {
+    color: #b0914f;
+    background-color: #fff;
+    border: 1px solid #b0914f;
+}
+/* Form modal */
+.modal-custom {
+    font-family: 'Montserrat', sans-serif;
+    width: 60% !important;
+}
+.modal-custom .ant-modal-body {
+    padding-top: 40px;
+}
+.modal-custom .form-custom {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+/* Form */
+.form-custom {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.modal-title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.31;
+    margin-top: 20px;
+    /* text-align: center; */
+    /* color: #202124; */
+    /* margin-bottom: 35px; */
+}
+.register-input {
+    padding: 12px 24px;
+    font-size: 14px;
+    background-color: #f6f6f6;
+}
+.select-status {
+    font-size: 14px;
+    background-color: #f6f6f6;
+}
+.form-custom .submit-btn {
+    height: 50px;
+    color: white;
+    background-color: #b0914f;
+    border: none;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.form-custom .cancel-btn {
+    height: 50px;
+}

@@ -2,7 +2,7 @@ import React from 'react'
 import { Row, Col } from 'antd'
 import { displayOccupancy } from '../../../../utils'
 
-export default function RoomInfo({ roomItem: { type, adultNumber, childNumber, view, bed, promotion, price },
+export default function RoomInfo({ roomItem: { room_type, adultNumber, childNumber, view, bed, promotion, rate },
                             extraTitle, button, isGridInfo }) {
     let maxOccupancy = displayOccupancy(adultNumber, childNumber)
     let mainInfo = view + ', ' + bed
@@ -12,7 +12,7 @@ export default function RoomInfo({ roomItem: { type, adultNumber, childNumber, v
             <div className="vk-dark-our-room-item-content" style={{ marginTop: 10 }}>
                 <Row align="middle">
                     <Col span={17}>
-                        <h3><a href="#">{type}</a></h3>
+                        <h3><a href="#">{room_type}</a></h3>
                     </Col>
                     <Col span={7}>
                         {extraTitle}
@@ -53,10 +53,10 @@ export default function RoomInfo({ roomItem: { type, adultNumber, childNumber, v
                     <div className="vk-dark-our-room-item-book-left">
                         <ul>
                             <li>
-                                <p>Price: </p>
+                                <p>Rate: &nbsp;</p>
                             </li>
                             <li>
-                                <p>${price}/ <span>Night</span></p>
+                                <p>${rate}/ <span>Night</span></p>
                             </li>
                         </ul>
                     </div>
