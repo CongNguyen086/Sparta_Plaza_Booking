@@ -175,7 +175,7 @@ class CatalogTable extends Component {
         const { loading, data, selectedRowKeys, pagination, searchText, isModalVisible } = this.state
 
         return (
-            <Card bordered={false} className='content-container'>
+            <Card bordered={false} className='content-container' style={{ marginTop: 0 }}>
                 <Row align='middle' justify='space-between' style={{ marginBottom: 20 }}>
                     <Col span={12}>
                         <Link to='/admin/roomcatalog/create'>

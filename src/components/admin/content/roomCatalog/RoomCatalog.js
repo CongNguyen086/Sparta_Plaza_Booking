@@ -14,10 +14,10 @@ class RoomCatalog extends Component {
                 <ContentHeader {...this.props} />
                 {/* <CreateForm /> */}
                 <Switch>
-                    <Route path={`${match.url}`} exact render={() => (
+                    {/* <Route path={`${match.url}`} exact render={() => (
                         <CreateForm title='Create' submitButton='Create' />)}
-                    />
-                    {/* <Route path={`${match.url}`} component={CatalogTable} /> */}
+                    /> */}
+                    <Route path={`${match.url}`} component={CatalogTable} />
                 </Switch>
             </div>
         )

@@ -19,7 +19,7 @@ export default class MakeBookingProcess extends Component {
             },
             product: {
                 description: 'This is booking description',
-                price: 50,
+                price: 100,
             },
             paymentStatus: ''
         }

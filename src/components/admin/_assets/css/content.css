@@ -78,3 +78,17 @@
 .form-custom .cancel-btn {
     height: 50px;
 }
+/* Chart */
+.chart-container {
+    margin: 30px;
+    text-align: center;
+}
+.chart-title {
+    margin-top: 20px;
+    font-size: 25px;
+}
+.custom-tooltip {
+    padding: 10px 30px;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+}
